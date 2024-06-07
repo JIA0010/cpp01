@@ -1,0 +1,18 @@
+NAME = hi_this_is_brain
+CC = c++
+FLAGS =    -Wall -Wextra -Werror -std=c++98 -pedantic-errors
+SRCS = main.cpp
+OBJS = $(SRCS:.cpp=.o)
+
+all: $(NAME)
+
+$(NAME): $(OBJS)
+	$(CC) $(FLAGS) -o $(NAME) $(OBJS)
+
+clean:
+	rm -f $(OBJS)
+
+fclean: clean
+	rm -f $(NAME)
+
+re: fclean all
