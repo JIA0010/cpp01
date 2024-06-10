@@ -1,5 +1,4 @@
 #include "Zombie.hpp"
-// #include <cstdlib>
 
 ZombieHorde::ZombieHorde(int N) : N(N) {
     zombies = new Zombie[N];
@@ -9,7 +8,7 @@ ZombieHorde::ZombieHorde(int N) : N(N) {
 }
 
 ZombieHorde::~ZombieHorde() {
-    delete[] zombies;  // 動的配列を解放
+    delete[] zombies;
 }
 
 void ZombieHorde::announce() {

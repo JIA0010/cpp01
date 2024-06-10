@@ -9,10 +9,10 @@ private:
     std::string name;
 
 public:
-    Zombie(std::string name);  // コンストラクタ
-    ~Zombie();  // デストラクタ
+    Zombie(std::string name);
+    ~Zombie();
 
-    void announce(void);  // メンバー関数
+    void announce(void);
 };
 
 void randomChump(std::string name);

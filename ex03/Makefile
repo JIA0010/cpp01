@@ -1,17 +1,15 @@
-# Makefile for ZombieHorde project
-
-NAME = zombiehorde
+NAME = UNNECESSARY_VIOLENCE
 CC = c++
 FLAGS =    -Wall -Wextra -Werror -std=c++98 -pedantic-errors
-SRCS = main.cpp Zombie.cpp zombieHorde.cpp
+SRCS = main.cpp Weapon.cpp HumanA.cpp HumanB.cpp
 OBJS = $(SRCS:.cpp=.o)
 
 all: $(NAME)
 
-$(NAME): $(OBJS)
+$(NAME) : $(OBJS)
 	$(CC) $(FLAGS) -o $(NAME) $(OBJS)
 
-clean:
+clean: 
 	rm -f $(OBJS)
 
 fclean: clean
