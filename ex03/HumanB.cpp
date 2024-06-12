@@ -6,14 +6,14 @@
 /*   By: yoshimurahiro <yoshimurahiro@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/08 16:33:57 by yoshimurahi       #+#    #+#             */
-/*   Updated: 2024/06/08 16:35:53 by yoshimurahi      ###   ########.fr       */
+/*   Updated: 2024/06/12 14:27:48 by yoshimurahi      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "HumanB.hpp"
 #include <iostream>
 
-HumanB::HumanB(const std::string& name) : name(name), weapon(nullptr) {}
+HumanB::HumanB(const std::string& name) : name(name), weapon(NULL) {}
 
 void HumanB::setWeapon(Weapon& weapon) {
     this->weapon = &weapon;
