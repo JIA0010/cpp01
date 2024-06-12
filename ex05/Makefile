@@ -2,13 +2,13 @@ NAME = harl
 
 SRCS = main.cpp Harl.cpp
 OBJS = $(SRCS:.cpp=.o)
-CXX = c++
-CXXFLAGS = -Wall -Wextra -Werror -std=c++98
+CC = c++
+FLAGS = -Wall -Wextra -Werror -std=c++98 -pedantic-errors
 
 all: $(NAME)
 
 $(NAME): $(OBJS)
-	$(CXX) $(CXXFLAGS) -o $(NAME) $(OBJS)
+	$(CC) $(CXXFLAGS) -o $(NAME) $(OBJS)
 
 clean:
 	rm -f $(OBJS)

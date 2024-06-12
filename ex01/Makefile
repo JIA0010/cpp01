@@ -1,5 +1,3 @@
-# Makefile for ZombieHorde project
-
 NAME = zombiehorde
 CC = c++
 FLAGS =    -Wall -Wextra -Werror -std=c++98 -pedantic-errors
@@ -18,3 +16,5 @@ fclean: clean
 	rm -f $(NAME)
 
 re: fclean all
+
+.PHONY:		all clean fclean re
