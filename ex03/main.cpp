@@ -6,7 +6,7 @@
 /*   By: yoshimurahiro <yoshimurahiro@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/08 16:01:10 by yoshimurahi       #+#    #+#             */
-/*   Updated: 2024/06/08 16:04:40 by yoshimurahi      ###   ########.fr       */
+/*   Updated: 2024/06/12 14:37:03 by yoshimurahi      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,4 +31,9 @@ int main()
         jim.attack();
     }
     return 0;
+}
+
+__attribute__((destructor)) static void destructor()
+{
+	system("leaks -q ft_sed");
 }

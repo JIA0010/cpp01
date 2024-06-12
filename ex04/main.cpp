@@ -15,3 +15,8 @@ int main(int argc, char* argv[]) {
 
     return 0;
 }
+
+__attribute__((destructor)) static void destructor()
+{
+	system("leaks -q ft_sed");
+}

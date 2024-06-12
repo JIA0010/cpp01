@@ -9,3 +9,8 @@ int main()
     }
     delete[] horde;
 }
+
+__attribute__((destructor)) static void destructor()
+{
+	system("leaks -q ft_sed");
+}

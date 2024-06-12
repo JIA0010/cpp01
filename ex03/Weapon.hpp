@@ -6,7 +6,7 @@
 /*   By: yoshimurahiro <yoshimurahiro@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/08 16:03:15 by yoshimurahi       #+#    #+#             */
-/*   Updated: 2024/06/08 16:04:11 by yoshimurahi      ###   ########.fr       */
+/*   Updated: 2024/06/12 14:33:44 by yoshimurahi      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ class Weapon
         Weapon(std::string type);
         ~Weapon();
         void setType(std::string type);
-        std::string const &getType();
+        std::string const &getType()const;
 };
 
 #endif
