@@ -1,16 +1,15 @@
 #include "Zombie.hpp"
 
 int main() {
-    Zombie* heapZombie = newZombie("HeapZombie");
-    heapZombie->announce();
-    delete heapZombie;
+  Zombie* heapZombie = newZombie("HeapZombie");
+  heapZombie->announce();
+  delete heapZombie;
 
-    randomChump("StackZombie");
+  randomChump("StackZombie");
 
-    return 0;
+  return 0;
 }
 
-__attribute__((destructor)) static void destructor()
-{
-	system("leaks -q ft_sed");
-}
+// __attribute__((destructor)) static void destructor() {
+//   system("leaks -q zombie");
+// }
