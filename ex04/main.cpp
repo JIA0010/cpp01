@@ -18,5 +18,5 @@ int main(int argc, char* argv[]) {
 
 __attribute__((destructor)) static void destructor()
 {
-	system("leaks -q ft_sed");
+	system("leaks -q SedIsForLosers");
 }

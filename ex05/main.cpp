@@ -13,5 +13,5 @@ int main() {
 
 __attribute__((destructor)) static void destructor()
 {
-	system("leaks -q ft_sed");
+	system("leaks -q harl");
 }
