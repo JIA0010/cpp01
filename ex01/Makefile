@@ -1,13 +1,12 @@
-NAME = zombiehorde
-CC = c++
-FLAGS =    -Wall -Wextra -Werror -std=c++98 -pedantic-errors
+NAME = zombieHorde
+FLAGS = -Wall -Wextra -Werror -std=c++98 -pedantic-errors
 SRCS = main.cpp Zombie.cpp zombieHorde.cpp
 OBJS = $(SRCS:.cpp=.o)
 
-all: $(NAME)
+all : $(NAME)
 
-$(NAME): $(OBJS)
-	$(CC) $(FLAGS) -o $(NAME) $(OBJS)
+$(NAME) : $(OBJS) Makefile
+	c++ $(FLAGS) -o $(NAME) $(OBJS)
 
 clean:
 	rm -f $(OBJS)
@@ -17,4 +16,9 @@ fclean: clean
 
 re: fclean all
 
-.PHONY:		all clean fclean re
+format:
+    $(if $(SRCS), clang-format --style=Google -i $(SRCS))
+    $(if $(HEADERS), clang-format --style=Google -i $(HEADERS))
+    $(if $(SHS), shfmt -w $(SHS))
+
+.PHONY: all clean fclean re

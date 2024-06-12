@@ -17,4 +17,9 @@ fclean: clean
 
 re: fclean all
 
+format:
+    $(if $(SRCS), clang-format --style=Google -i $(SRCS))
+    $(if $(HEADERS), clang-format --style=Google -i $(HEADERS))
+    $(if $(SHS), shfmt -w $(SHS))
+
 .PHONY:		all clean fclean re
