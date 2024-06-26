@@ -1,8 +1,5 @@
 #include "SedIsForLosers.hpp"
 
-#include <fstream>
-#include <iostream>
-
 void SedIsForLosers::my_replace(std::string& str, size_t pos, size_t len,
                                 const std::string& newStr) {
   str = str.substr(0, pos) + newStr + str.substr(pos + len);
