@@ -6,7 +6,7 @@
 /*   By: yoshimurahiro <yoshimurahiro@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/08 16:04:49 by yoshimurahi       #+#    #+#             */
-/*   Updated: 2024/06/08 16:57:19 by yoshimurahi      ###   ########.fr       */
+/*   Updated: 2024/06/26 14:35:28 by yoshimurahi      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,8 @@
 
 class HumanB {
 private:
-    std::string name;
-    Weapon* weapon;
+    std::string _name;
+    Weapon* _weapon;
 
 public:
     HumanB(const std::string& name);

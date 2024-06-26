@@ -6,7 +6,7 @@
 /*   By: yoshimurahiro <yoshimurahiro@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/08 16:02:33 by yoshimurahi       #+#    #+#             */
-/*   Updated: 2024/06/08 16:59:36 by yoshimurahi      ###   ########.fr       */
+/*   Updated: 2024/06/26 14:35:15 by yoshimurahi      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,8 @@
 
 class HumanA {
 private:
-    std::string name;
-    Weapon& weapon;
+    std::string _name;
+    Weapon& _weapon;
 
 public:
     HumanA(const std::string& name, Weapon& weapon);

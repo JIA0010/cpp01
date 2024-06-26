@@ -2,6 +2,10 @@
 
 #include <iostream>
 
+Harl::Harl(void) {}
+
+Harl::~Harl(void) {}
+
 void Harl::debug(void) {
   std::cout
       << "I love having extra bacon for my "
@@ -18,7 +22,7 @@ void Harl::info(void) {
 
 void Harl::warning(void) {
   std::cout
-      << "I think I deserve to have some extra bacon for free. I’ve been "
+      << "I think I deserve to have some extra bacon for free. I've been "
          "coming for years whereas you started working here since last month."
       << std::endl;
 }
@@ -31,7 +35,8 @@ void Harl::error(void) {
 void Harl::complain(std::string level) {
   std::string levels[] = {"DEBUG", "INFO", "WARNING", "ERROR"};
 
-  void (Harl::*functions[])(void){&debug, &info, &warning, &error};
+  void (Harl::*functions[])(void) = {&Harl::info, &Harl::info, &Harl::warning,
+                                     &Harl::error};
 
   for (int i = 0; i < 4; i++) {
     if (levels[i] == level) {

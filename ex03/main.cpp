@@ -6,7 +6,7 @@
 /*   By: yoshimurahiro <yoshimurahiro@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/08 16:01:10 by yoshimurahi       #+#    #+#             */
-/*   Updated: 2024/06/25 14:28:49 by yoshimurahi      ###   ########.fr       */
+/*   Updated: 2024/06/26 13:34:19 by yoshimurahi      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,6 @@ int main() {
   return 0;
 }
 
-__attribute__((destructor)) static void destructor() {
-  system("leaks -q UNNECESSARY_VIOLENCE");
-}
+// __attribute__((destructor)) static void destructor() {
+//   system("leaks -q UNNECESSARY_VIOLENCE");
+// }
